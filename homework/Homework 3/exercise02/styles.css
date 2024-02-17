@@ -6,10 +6,20 @@ body {
 main {
     margin-left: 15vw;
     margin-right: 15vw;
-    background-color: card 1, card 3, card 5; #EEEEEE
+
+}
+
+#card1, #card3, #card5{
+    background-color:gray ;
+    
+
+#section 1 img
+#section 2 img  
 
 
 }
+
+
 header {
     background-color: #45425a;
     color: white;
@@ -34,30 +44,11 @@ code {
     font-weight: bold;
 }
 
-.cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    row-gap: 20px;
-    column-gap: 20px;
-    background-color: #EEEEEE; first, third, and fifth cards 
-    background-color: #BCE5D6; second, fourth, and sixth cards
-}
-
-.card {
-    border: solid 2px #000;
-    padding: 10px;
-}
-
-.card img {
-    width: 100%;
-    border: solid 2px #000;
-    // Make the images inside the first, third, and fifth card circular.
-    
-}
-
 footer {
     background-color: #EEE;
     padding: 30px;
     margin-top: 30px;
     text-align: center;
+    text-decoration: bold;
+
 }
