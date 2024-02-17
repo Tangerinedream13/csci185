@@ -1,54 +1,71 @@
 body {
-    margin: 15svw;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: bold;
+  margin: 15svw;
+  font-family: "Courier New", Courier, monospace;
+  font-style: bold;
 }
 main {
-    margin-left: 15vw;
-    margin-right: 15vw;
-
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 
-#card1, #card3, #card5{
-    background-color:gray ;
-    
-
-#section 1 img
-#section 2 img  
-
-
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
+.cards section,
+.cards img {
+  border: 1px solid #45425a;
+  margin: 5px;
+}
+
+.cards section {
+  padding: 5px;
+}
+
+#card1,
+#card3,
+#card5 {
+  background-color: #eeeeee;
+  img {
+    border-radius: 50%;
+  }
+}
+
+#card2,
+#card4,
+#card6 {
+  background-color: #bce5d6;
+}
 
 header {
-    background-color: #45425a;
-    color: white;
-    padding: 20px;
+  background-color: #45425a;
+  color: white;
+  padding: 20px;
 }
 
 footer {
-    background-color: #EEE;
-    padding: 30px;
-    margin-top: 30px;
-    text-align: center;
-    font-style: bold;
+  background-color: #eee;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+  font-style: bold;
 }
 
 ol {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 code {
-    background-color: #EEE;
-    font-size: 1.2em;
-    font-weight: bold;
+  background-color: #eee;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 footer {
-    background-color: #EEE;
-    padding: 30px;
-    margin-top: 30px;
-    text-align: center;
-    text-decoration: bold;
-
+  background-color: #eee;
+  padding: 30px;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: bold;
 }
