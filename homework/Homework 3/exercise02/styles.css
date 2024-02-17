@@ -11,6 +11,8 @@ main {
 .cards {
   display: grid;
   grid-template-columns: auto auto auto;
+  text-align: center;
+
 }
 
 .cards section,
@@ -21,6 +23,7 @@ main {
 
 .cards section {
   padding: 5px;
+  
 }
 
 #card1,
