@@ -25,9 +25,11 @@ nav a {
 
   }
 
-#images{
+  main {
+  #images {
   justify-content: center;
   text-align: center;
+  }
 }
 
 footer {
