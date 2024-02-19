@@ -91,53 +91,55 @@ body {
     ul {
         margin-bottom: 50px;
     }
-
+    
     h2 {
         text-align: left;
     }
-
+    
     .location-hours {
         margin-top: 50px;
     }
-
+    
     .location-hours p {
         margin: 0;
     }
-
+    
     form {
         margin: 0 auto;
         width: 600px;
         padding: 20px;
         border-radius: 4px;
     }
-
+    
+    
     form label {
         display: inline-block;
         width: 75px;
         padding: 10px 0px 5px 0;
         margin-top: 10px;
     }
-
-    form input,
-    form textarea {
+    
+    form input, form textarea {
         width: 550px;
         padding: 10px;
         border-radius: 4px;
-        background: #fff;
-        border: solid 1px #ccc;
+        background: #FFF;
+        border: solid 1px #CCC;
         padding-bottom: 20px;
         font-size: 1.2em;
         margin-bottom: 10px;
     }
-
+    
     form button {
         border: solid 2px #fff;
         padding: 10px 20px;
         text-transform: none;
         background: #013672;
         color: white;
-        font-family: "Work Sans", sans-serif;
+        font-family: 'Work Sans', sans-serif;
         font-weight: 300;
         font-size: 1.1em;
     }
+
 }
+
