@@ -29,7 +29,12 @@ header {
 
 main {
     height: 70vh;
+
+main div {
+    display: block;
 }
+}
+
 
 footer {
     height: 10vh;
@@ -56,4 +61,12 @@ footer {
     }
 
 }
+@media screen and (max-width: 600px) {
+    /*when the width gets to 600px, change the main's background color to hotpink*/
+    
+    main {
+    background-color: pink;
+    display: none;
 
+}
+}
