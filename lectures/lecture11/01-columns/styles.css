@@ -11,3 +11,26 @@ main>section {
     border-radius: 6px;
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
 }
+
+main{
+    display: grid; 
+    /*puts everything in grid mode*/
+    grid-template-columns: (5, 1fr); 
+    column-gap: 20px;
+    row-gap: 20px; 
+}
+    /* when we want to apply the media query for a tablet*/
+@media screen and (max-width: 1000px) {
+    
+    main{
+        grid-template-column: repeat (3, 1fr);  
+    }
+
+}
+    /*make a media query for <500px that has only 1 column*/
+@media screen and (max-width: 500px) {
+    main{
+        grid-template-column: repeat (1, 1fr);
+    }
+
+}

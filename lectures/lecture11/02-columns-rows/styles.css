@@ -21,16 +21,33 @@ body {
 
 /* Task 2 */
 
-.container {}
+.container {
+    display: grid; 
+    grid-template-columns: 1fr 3fr;
+    margin-right: 10vw;
+    margin-left; 10vw;
+}
 
-.header {}
+.header {
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
 
-.navigation {}
+.navigation {   
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /*grid-column: 1 / span 2*/
+}
+.main {
+    min-height: 70vh;
+    grid-column-start: 1;
+    grid-column-start: 2;
+}
+
+.sidebar {
+    grid-column-start: 2;
+}
 
 .ads {}
-
-.sidebar {}
-
-.main {}
 
 .footer {}

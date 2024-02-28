@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+
+/* SET UP */
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding-left: 1.5rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #333;
+  background-color: snow;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.container > div {
+  padding: 8px;
+  background-color: white;
+  border: 4px solid tomato;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Task 4 */
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  /*grid-template-columns: 20 60 20; */
+  gap: 20px;
+}
+
+.header {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  /*grid-column-span: 3;*/
+  /*grid-column-end: 1 / span 3;*/
+}
+
+.navigation {
+  grid-column: 2 / span 1;
+  /*grid-column-start: 1;*/
+  /*grid-column-end: span 1; */
+}
+
+.ads {
+  grid-column: 3 / span 1;
+  grid-row: 2 / span 2;
+}
+
+.sidebar {
+  grid-row-start: 2;
+  grid-row-end: span 2;
+}
+.main {
+  grid-row-start: 3;
+  grid-row-end: span 1;
+  grid-column-start: 2;
+  grid-column-end: span 1;
+  min-height: 70vh;
+}
+
+.footer {
+  grid-row-start: 4;
+  grid-row-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /*grid-template-columns: 25 75; */
+    /*gap: 20px;*/
+  }
+
+  .header {
+    grid-column: 1 / span 2;
+    /*grid-column-span: 2;*/
+    /*grid-column-end: 1 / span 3;*/
+  }
+
+  .navigation {
+    grid-column: 1 / span 2;
+    /*grid-column-start: 1;*/
+    /*grid-column-end: span 1; */
+  }
+  .ads {
+    grid-row: 4 / span 1;
+    grid-column: 1 / span 1;
+  }
+
+  .sidebar {
+    grid-row: 3 / span 1;
+    grid-column: 1 / span 1;
+    min-height: 75vh;
+  }
+
+  .main {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+    min-height: 70vh;
+  }
+
+  .footer {
+    grid-row: 4 / span 1;
+    grid-column: 2 / span 1;
+  }
+}
+
+@media (max-width: 720px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10 10 50 10 10 10; 
+      }
+    
+      .header {
+        grid-column: 1 / span 1;
+      }
+    
+      .navigation {
+        grid-column: 1 / span 1;
+      
+      }
+      .ads {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+      }
+    
+      .sidebar {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+      }
+    
+      .main {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+        min-height: 70vh;
+      }
+    
+      .footer {
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 1;
+      }
+    }
+    
+   
+    
+
+
+
+
+
+
+
