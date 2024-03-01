@@ -99,7 +99,6 @@ body {
   .sidebar {
     grid-row: 3 / span 1;
     grid-column: 1 / span 1;
-    min-height: 75vh;
   }
 
   .main {
@@ -119,7 +118,6 @@ body {
     .container {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 10 10 50 10 10 10; 
       }
     
       .header {
@@ -143,7 +141,6 @@ body {
       .main {
         grid-row: 3 / span 1;
         grid-column: 1 / span 1;
-        min-height: 70vh;
       }
     
       .footer {
