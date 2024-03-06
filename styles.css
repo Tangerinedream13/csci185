@@ -1,4 +1,52 @@
-/* You're welcome to change any of this! */
+
+@import url .roboto-condensed-<uniquifier> {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100; 
+  font-style: normal;
+}
+
+section {
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center; 
+    display: flex;
+  }
+
+  .grid-container {
+    height: 100vh;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    padding: 8px;
+    background-color: rgb(246, 249, 248);
+}
+
+
+header {
+    border-bottom: 4px solid black; 
+}
+
+nav {
+
+}
+
+main {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+    }
+    
+    .left-column {
+        grid-column: 1;
+    }
+    
+    .right-column {
+        grid-column: 2;
+    }
+    
+}
 * {
     box-sizing: border-box;
 }
@@ -6,9 +54,46 @@
 body {
     margin: 0px;
     font-family: Arial, sans-serif;
+    background-color: rgb(242, 250, 249);
+    padding-left: 20px; 
 }
 
 p, a, li {
     line-height: 1.5em;
     font-size: 1.1em;
+}
+
+footer {
+
+
+}
+
+@media (max-width: 720px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+      }
+    
+      .header {
+        grid-column: 1 / span 1;
+      }
+    
+      .navigation {
+        grid-column: 1 / span 1;
+      
+      }
+      .main {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+      }
+    
+      .footer {
+        grid-row: 6 / span 1;
+        grid-column: 1 / span 1;
+      }
+    }
+    
+
+
 }
