@@ -9,12 +9,25 @@ header {
 nav {
 
 }
-main {
-    .container {
-        display: grid;
-        grid-template-columns: 1fr; 
-    }
+
+#intro{
+  background-image: url(./portrait.jpeg) ;
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: contain;
+  margin: 0px 10vw;
+  height: 600px;
 }
+#intro h2 {
+  font-size: 100px;
+}
+img 
+    .container {
+      border-radius: 20%;
+      text-align: right;
+
+    }
+
 
 body {
     margin: 0px;
@@ -30,14 +43,14 @@ p, a, li {
 
 footer {
   margin: 0px;
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: rgba(227, 232, 232, 0.655);
   padding-left: 20px; 
 }
 
 @media (max-width: 720px) {
 
-    .container {
+      .container {
         display: grid;
         grid-template-columns: 1fr;
       }
@@ -63,4 +76,3 @@ footer {
     
 
 
-}
