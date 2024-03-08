@@ -31,17 +31,24 @@ img
       margin: 0px 10vw;
       weight: 600px;
     }
+.grid-container {
+  height: 35vh;
+  display: grid; 
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 40pcpx;
+  font-size: 20px;
+  margin-top: 40px;
+  border-bottom: 2px solid black;
+  margin-left: 10vw;
 
+}
 
 body {
     margin: 0px;
     font-family: "Roboto", sans-serif;
     background-color: rgba(227, 232, 232, 0.655);
-    padding-left: 20px; 
-
-#services {
-  font-size: 100px
-}  
+    padding-left: 20px;
 
 #contact {
 
@@ -73,6 +80,20 @@ footer {
 }
 
 @media (max-width: 720px) {
+
+  #intro{
+    background-image: url(./portrait.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    margin: 0px 10vw;
+    height: 1000px;
+    border-bottom: 2px solid black;
+    
+  }
+  #intro h2 {
+    font-size: 100px;
+  }
 
       .container {
         display: grid;
