@@ -12,12 +12,12 @@ nav {
 }
 
 #intro{
-  background-image: url(./portrait.jpeg) ;
+  background-image: url(./portrait.jpeg);
   background-repeat: no-repeat;
   background-position: top right;
   background-size: contain;
   margin: 0px 10vw;
-  height: 600px;
+  height: 800px;
   border-bottom: 2px solid black;
   
 }
@@ -30,6 +30,8 @@ img
       text-align: right;
       margin: 0px 10vw;
       weight: 600px;
+      filter: grayscale(100%)
+
     }
 .grid-container {
   height: 35vh;
@@ -56,7 +58,7 @@ body {
 }
 
 #portfolio {
-
+filter: grayscale(100%)
 
 }
 
