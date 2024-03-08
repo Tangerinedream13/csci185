@@ -17,12 +17,14 @@ nav {
   background-position: top right;
   background-size: contain;
   margin: 0px 10vw;
-  height: 800px;
+  height: 60vh;
   border-bottom: 2px solid black;
-  
+  padding: 10vh; 
+
 }
 #intro h2 {
   font-size: 100px;
+
 }
 img 
     .container {
@@ -34,7 +36,6 @@ img
 
     }
 .grid-container {
-  height: 35vh;
   display: grid; 
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -104,10 +105,9 @@ footer {
     
       .header {
         grid-column: 1 / span 1;
-      }
     
       .navigation {
-        grid-column: 1 / span 1;
+       grid-column: 1 span 1;
       
       }
       .main {
@@ -120,6 +120,6 @@ footer {
         grid-column: 1 / span 1;
       }
     }
-    
+  } 
 
 
