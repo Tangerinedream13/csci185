@@ -3,7 +3,8 @@ h1, h2 {
   font-family:"Roboto", sans-serif;
 }
 header {
-    border-bottom: 4px solid black; 
+    padding-top: 40px;
+    border-bottom: 2px solid black; 
 }
 
 nav {
@@ -17,6 +18,8 @@ nav {
   background-size: contain;
   margin: 0px 10vw;
   height: 600px;
+  border-bottom: 2px solid black;
+  
 }
 #intro h2 {
   font-size: 100px;
@@ -25,7 +28,8 @@ img
     .container {
       border-radius: 20%;
       text-align: right;
-
+      margin: 0px 10vw;
+      weight: 600px;
     }
 
 
@@ -34,6 +38,26 @@ body {
     font-family: "Roboto", sans-serif;
     background-color: rgba(227, 232, 232, 0.655);
     padding-left: 20px; 
+
+#services {
+  font-size: 100px
+}  
+
+#contact {
+
+
+}
+
+#portfolio {
+
+
+}
+
+#about {
+
+
+}
+
 }
 
 p, a, li {
@@ -64,12 +88,12 @@ footer {
       
       }
       .main {
-        grid-row: 3 / span 1;
+        grid-row: 1 / span 1;
         grid-column: 1 / span 1;
       }
     
       .footer {
-        grid-row: 6 / span 1;
+        grid-row: 1 / span 1;
         grid-column: 1 / span 1;
       }
     }
