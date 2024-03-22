@@ -2,14 +2,14 @@ function makeBigger() {
    const headerEL = document.querySelector("header");
    headerEL.style.fontSize = "40px";
    const contentEL = document.querySelector(".content");
-   headerEL.style.fontSize = "30px";
+   contentEL.style.fontSize = "30px";
 };
 
 function makeSmaller() {
    const headerEL = document.querySelector("header");
    headerEL.style.fontSize = "";
    const contentEL = document.querySelector(".content");
-   headerEL.style.fontSize = "";
+   contentEL.style.fontSize = "";
 };
 
 /*
