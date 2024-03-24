@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+html{
+  scroll-behavior: smooth;
+}
+
 h1,
 h2 {
   font-family: "Roboto", sans-serif;
@@ -20,10 +25,16 @@ nav {
   height: 60vh;
   border-bottom: 2px solid black;
   padding: 10vh;
+  background-color: rgba(45,45,45,255);
+  ;
+  color: white; 
 }
 #intro h2 {
   font-size: 100px;
 }
+
+
+
 img .container {
   border-radius: 20%;
   text-align: right;
@@ -46,6 +57,14 @@ body {
   margin: 0px;
   font-family: "Roboto", sans-serif;
   background-color: rgba(227, 232, 232, 0.655);
+    /*--neutral-200: #e8ebe8;
+    --neutral-700: #464646;
+    --neutral-800: #191919;
+    --neutral-600: #757575;
+    --bg-neutral-100: white;
+    --neutral-500: #babbbd;
+    --neutral-400: #d1d2cf;
+    --neutral-300: #D6D9D3;*/
   padding-left: 20px;
 
   #contact {
