@@ -33,8 +33,6 @@ nav {
   font-size: 100px;
 }
 
-
-
 img .container {
   border-radius: 20%;
   text-align: right;
@@ -48,7 +46,7 @@ img .container {
   grid-template-rows: 1fr 1fr;
   padding: 40pcpx;
   font-size: 20px;
-  margin-top: 40px;
+  margin-top: 50px;
   border-bottom: 2px solid black;
   margin-left: 10vw;
 }
@@ -74,12 +72,13 @@ body {
     filter: grayscale(100%);
   }
 
-  #about {
+  #about{
+    padding-right: 20;
+    font-family: "Tourney", sans-serif;
+
   }
 }
 
-p,
-a,
 li {
   line-height: 1.5em;
   font-size: 1.1em;
