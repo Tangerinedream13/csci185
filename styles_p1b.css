@@ -7,6 +7,12 @@ html{
 h1,
 h2 {
   font-family: "Roboto", sans-serif;
+  font-size: 50px;
+}
+h3 {
+  font-family: "Roboto", sans-serif; 
+  font-size: 35px;
+
 }
 header {
   padding-top: 40px;
@@ -26,18 +32,24 @@ nav {
   border-bottom: 2px solid black;
   padding: 10vh;
   background-color: rgba(45,45,45,255);
-  ;
   color: white; 
 }
+
+.fa-angle-down {
+font-size: 100px;}
+
+.black-link {
+color: black;
+}
+
 #intro h2 {
   font-size: 100px;
 }
-
-img .container {
+img.container {
   border-radius: 20%;
   text-align: right;
   margin: 0px 10vw;
-  weight: 600px;
+  font-weight: 600px;
   filter: grayscale(100%);
 }
 .grid-container {
@@ -66,12 +78,29 @@ body {
   padding-left: 20px;
 
   #contact {
+    font-size: 30px;
   }
 
   #portfolio {
     filter: grayscale(100%);
-  }
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    padding-left: 20px;
 
+  }
+  #portfolio img {
+    margin-bottom: 20%;
+      text-align: center;
+      line-height: 100px;
+      transition: scale 0.3s ease;
+      padding-left: 10px;
+  
+    }
+  #portfolio img:hover {
+    scale: 1.1;
+
+  }
   #about{
     padding-right: 20;
     font-family: "Tourney", sans-serif;
@@ -102,7 +131,7 @@ footer {
     border-bottom: 2px solid black;
   }
   #intro h2 {
-    font-size: 100px;
+    font-size: 200px;
   }
 
   .grid-container {
