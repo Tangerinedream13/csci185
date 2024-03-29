@@ -14,9 +14,29 @@ function mouseDragged(){
     // the color, shape, and size of the paintbrush that are selected
     // in the right-hand panel. Replace the code below with something
     // smarter:
-    fill('hotpink');
-    circle(mouseX, mouseY, 20);
-}
+    const color = document.querySelector("#color").value;
+    const size = Number(document.querySelector ("#size").value);
+    const shape = document.querySelector ("#shape").value; 
+    
+
+    fill(color); // how can this come from the user????
+    strokeWeight (0);
+
+    if (shape === "circle") {
+        circle(mouseX, mouseY, size);
+        } else if (shape === "square") {
+            square(mouseX, mouseY, size);
+        } else {
+            triangle(
+                mouseX, mouseY, // top
+                mouseX - size / 2, mouseY + size, // left
+                mouseX + size / 2, mouseY + size, // right
+            );
+        }
+    }
+    circle(mouseX, mouseY, (size));
+    square(mouseX, mouseY, (size));
+
 
 
 
