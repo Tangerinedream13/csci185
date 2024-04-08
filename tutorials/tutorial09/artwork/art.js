@@ -1,6 +1,6 @@
 const canvasWidth = window.innerWidth;
 const canvasHeight = window.innerHeight;
-const colors = ["#08415c", "#e1f0c4", "#6bab90", "#55917f", "#5e4c5a"];
+const colors = ["#08415c33", "#e1f0c433", "#6bab9033", "#55917f33", "#5e4c5a33"];
 
 function randomInt(min, max) {
     // min and max included
@@ -9,17 +9,7 @@ function randomInt(min, max) {
 
 function setup() {
     createCanvas(canvasWidth, canvasHeight);
-    frameRate(2); // how many redraws per second
-
-    fill("#08415c");
-
-    // generate a random x-position, y-position, and size:
-    let x = randomInt(0, canvasWidth);
-    let y = randomInt(0, canvasHeight);
-    let size = randomInt(25, 125);
-
-    // Draw a random circle:
-    circle(x, y, size);
+    frameRate(1); // how many redraws per second
 }
 
 /***********************************+*
@@ -29,13 +19,22 @@ function setup() {
  * *********************************
  */
 function draw() {
-    // clear();
-
+    fill("#08415c50");
+    strokeWeight (3);
+    clear ();
     // generate a random x-position, y-position, and size:
-    let x = randomInt(0, canvasWidth);
-    let y = randomInt(0, canvasHeight);
-    let size = randomFloat(25, 125);
+    // Draw a random circle:
+    let counter = 0; 
+    while (counter <100) {
+        let color = colors [randomInt(0,4)]; 
+        fill (color); 
+        let x = randomInt(0, canvasWidth);
+        let y = randomInt(0, canvasHeight);
+        let size = randomInt(25, 125);    
+        circle (x, y, size);
+        square (x, y, size);
+        counter ++;
+        //counter = counter + 1;
+    }
 
-    // draw a random circle each time the program animates:
-    circle(x, y, size);
 }

@@ -3,13 +3,29 @@ const canvasHeight = window.innerHeight;
 
 // feel free to change these values as you like!
 const c1 = {
-    x: 100,
+    x: 0,
     y: 100,
-    width: 200,
-    speed: 0.2,
+    width: 150,
+    speed: 20,
     color: 'hotpink'
 };
 
+const c2 = {
+    x: 1000,
+    y: 200,
+    width: 150,
+    speed: -20,
+    color: 'green'
+};
+
+const c3 = {
+    x: 0, 
+    y: 700,
+    width: 400, 
+    speed: 20, 
+  color: 'blue'
+
+};
 
 // required to set up the canvas:
 function setup() {
@@ -20,18 +36,36 @@ function setup() {
 // animation loop:
 function draw() {
     // clear the canvas:
+    console.log 
     clear();
 
-    // move the car:
+    // move the cars:
+    if (c1.x > canvasWidth + 400) {
+        console.log ("Car 1 Jumps!")  
+        c1.x = -400;}
+
+    if (c2.x < -200) { 
+        console.log ("Car 2 Jumps!")
+        c2.x = canvasWidth + 200;}
+
+    // if (c3.x < +400) {
+    //     console.log ("Car 3 Jumps!")
+    //     c2.x = canvasWidth + 200;}
+
+    }
+
     c1.x += c1.speed;
+    c2.x += c2.speed;
+    c3.x += c3.speed; 
+    
 
     // redraw the car:
     drawCar(c1.x, c1.y, c1.width, c1.color);
-    
+    drawCar(c2.x +10, c2.y + 10, c2.width + 10, c2.color);
+    drawCar(c3.x +10, c3.y + 10, c3.width + 10, c3.color);
     // draw the grid (optional -- feel free to remove this line):
-    drawGrid(canvasWidth, canvasHeight);
-}
 
+    }
 
 // this function's job is to draw a car based on the 
 // parameters the user passes in (x, y, size, fillColor, and wheelColor)

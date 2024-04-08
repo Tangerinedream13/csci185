@@ -1,13 +1,35 @@
 const names = [
-    "Jane", "Brenda", "Wanda", "Maria", "Jasper",
-    "John", "Malik", "Arjun", "Larry", "Curly", "Moe"
+    "Jane", 
+    "Brenda", 
+    "Wanda", 
+    "Maria", 
+    "Jasper",
+    "John", 
+    "Malik", 
+    "Arjun", 
+    "Larry", 
+    "Curly", 
+    "Moe", 
+    "Natasha",
+    "Keiran",
+    "Sarah",
+    "Jack",
 ];
 
 
 // use a while loop to output a message for each
 // item in the array:
 const outputElement = document.querySelector('#output');
-outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[0]}!</p>`);
-outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[1]}!</p>`);
-outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[2]}!</p>`);
-outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[3]}!</p>`);
+let counter = 0; 
+while (counter < names.length) {
+    outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[counter]}!</p>`);
+    counter += 1;
+}
+
+
+
+
+
+// outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[1]}!</p>`);
+// outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[2]}!</p>`);
+// outputElement.insertAdjacentHTML('beforeend', `<p>Welcome, ${names[3]}!</p>`);
