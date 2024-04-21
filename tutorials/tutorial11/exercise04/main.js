@@ -23,3 +23,4 @@ for (let i = 0; i < restaurants.length; i++) {
 //The for loop iterates over the restaurants array. Inside the loop, there's a condition that checks if the restaurant's category is "pizza".
 //If the category is "pizza", a new paragraph element (<p>) is created
 //the restaurant's name is set as the text content of the paragraph
+//Chat GPT
