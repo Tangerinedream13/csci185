@@ -9,3 +9,9 @@ const restaurants = [
     "Red Ginger Dimsum And Tapas", 
     "Murasaki Asheville"
 ];
+
+for (let i = 0; i < restaurant.length; i++) {
+    const element = document.querySelector ('#output');
+    element.innerHTML += `<p>${restaurants[i]}</p>`
+    //element.insertAdjacentHTML ("beforehand", `<p>${restaurants[i])}</p>`;
+}

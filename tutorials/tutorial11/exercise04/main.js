@@ -14,13 +14,13 @@ const restaurants = [
 const mainElement = document.querySelector ('#output');
 for (let i = 0; i < restaurants.length; i++) {
         if (restaurants[i].category === 'pizza') {
-        const p = document.createElement('p');
-        p.textContent = restaurants[i].name;
-        mainElement.appendChild(p);
+            mainElement.innerHTML += `<p>${restaurants[i].name} </p>`;
         }
     }
+    
 //The querySelector('#output') selects the <main> tag with the id of output.
 //The for loop iterates over the restaurants array. Inside the loop, there's a condition that checks if the restaurant's category is "pizza".
 //If the category is "pizza", a new paragraph element (<p>) is created
 //the restaurant's name is set as the text content of the paragraph
-//Chat GPT
+//mainElement.innerHTML += `<p>${restaurants[i].name} </p>
+//restaurants[i].category === 'pizza'||restaurants[i].category === 'thai')

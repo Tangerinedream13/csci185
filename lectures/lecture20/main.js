@@ -1,9 +1,8 @@
 let data;
 
-
 async function fetchCourses() {
     const url = `https://meteor.unca.edu/registrar/class-schedules/api/v1/courses/2024/fall/`;
-    const data = await fetch(url).then(response => response.json());
+    data = await fetch(url).then(response => response.json());
 } 
 fetchCourses();
 
@@ -23,9 +22,29 @@ fetchCourses();
             * Select which term they want to view?
             * Only view classes that meet on Tuesdays and Thursdays? 
 */
-
-
 function search() {
     console.log(data);
     const searchTerm = document.querySelector('#search_term').value;
+    const mainEl = document.querySelector('.courses');
+
+    for (let i = 0; i <data.length; i++) {
+        if (data[i].Department === searchTerm) {
+            //1. Build the HTML snippet
+            const snippet = `
+            <section class="course">
+                <h2>${data[i].Code}: ${data[i].Title}</h2>
+                <p>
+                    ${data[i].days} &bull; ${data[i].Location.FullLocation} &bull; ${[i]}.Hours}
+                </p>
+                <p><strong>${data[i].Instructors[0].Name}</strong></p>
+            </section>
+        `;
+       
+            mainEl.insertAdjacentHTML("beforeend", snippet);
+
+            console.log(data[i].Title);
+           
+        } 
+    }
+
 }
