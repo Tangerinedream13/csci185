@@ -32,22 +32,29 @@ async function getArtist (term) {
     const request = await fetch (url);
     const data = await request.json();
     console.log (data);
+    console.log (data[0].name); //name of artist
+    console.log (data[0].image_url); //image_url
+    console.log (data[0].spotify_url); //spotify_url
+
     // go to the spotify API with the parameter term
     // type=artist&limit=1
     // q=term&type=artist&limit=1
     // insert it into the DOM
 
     const snippet = `
+        section class="artist-card" id=${data[0].image_url)>
         <div>
-            <img src="https://i.scdn.co/image/0c9057cb30520f9f883a220051260fc66a2f3ffa">
-                <h2>BTS</h2>
+            <img src="${data[0].image_url}">
+                <h2>${data[0].name}"</h2>
                     <div class="footer">
-                        <a href="https://open.spotify.com/artist/3Nrfpe0tUJi4K4DXYWgMUX" target="_blank">
+                        <a href="${data[0].spotify_url}" target = "_blank">
                             view on spotify
                                 </a>
                             </div>
                         </div>
                     </section>`;
+    const container = document.querySelector("#artist");
+    container.innerHTML = snippet;
 }
 
 document.querySelector('#search').onkeyup = function (ev) {
