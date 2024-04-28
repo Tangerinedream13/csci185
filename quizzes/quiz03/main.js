@@ -1,25 +1,23 @@
 function color1() {
-    // target the element with the id of square1
-    // and change its background color...
+    document.querySelector("#square1").style.backgroundColor = "#42CAFD";
 }
 
 function color2() {
-    // target the element with the id of square2
-    // and change its background color...
+    document.querySelector("#square2").style.backgroundColor = "#66B3BA";
 }
 
 function color3() {
-    // TODO
+    document.querySelector("#square3").style.backgroundColor = "#8EB19D";
 }
 
 function color4() {
-    // TODO
+    document.querySelector("#square4").style.backgroundColor = "#F6EFA6";
 }
 
 function color5() {
-    // TODO
+    document.querySelector("#square5").style.backgroundColor = "#F0D2D1";
 }
 
 function color6() {
-    // TODO
+    document.querySelector("#square6").style.backgroundColor = "#FC6DAB";
 }
