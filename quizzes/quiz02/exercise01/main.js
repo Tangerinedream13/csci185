@@ -1,12 +1,12 @@
 function changeBackground() {
-    document.querySelector("#s1").style.backgroundColor = "#pink";
+    console.log ("test");
+    document.querySelector("#s1").style.backgroundColor = "pink";
 }
 function goodbye() {
-    document.querySelector('button').onclick = function() {
-        = 'Goodbye';
-    };
+    console.log ("Goodbye");
+    const message = document.querySelector ("#message");
+    message.innerHTML = "Goodbye";
 }
 function showDog() {
-    document.querySelector('image').src = 
-    element
+    document.querySelector('img').src = "images/dog.jpg";
 }
