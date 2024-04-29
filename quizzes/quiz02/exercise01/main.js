@@ -7,6 +7,6 @@ function goodbye() {
     };
 }
 function showDog() {
-    document.querySelector('image').src = ""`
+    document.querySelector('image').src = 
     element
 }
