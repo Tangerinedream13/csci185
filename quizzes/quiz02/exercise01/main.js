@@ -3,7 +3,7 @@ function changeBackground() {
 }
 function goodbye() {
     document.querySelector('button').onclick = function() {
-        this.textContent = 'Goodbye';
+        = 'Goodbye';
     };
 }
 function showDog() {
