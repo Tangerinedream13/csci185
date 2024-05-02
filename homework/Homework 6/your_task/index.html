@@ -1,49 +1,50 @@
-<html>
-    <head>
-        <title>Spotify Player</title>
-        <link rel="stylesheet" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous" defer></script>
-        <script type="text/javascript" src="main.js" defer></script>
-    </head>
-    <body id="container">
-        <aside id="sidebar">
-            <h1>
-                <i class="fab fa-spotify"></i>
-                Spotify
-            </h1>
-            <a class="selected" href="#">
-                <i class="fas fa-search"></i>
-                Search
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spotify Player</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/62a7c74d0d.js" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="main.js" defer></script>
+</head>
+<body id="container">
+    <aside id="sidebar" role="complementary">
+        <h1>
+            <i class="fab fa-spotify"></i> Spotify
+        </h1>
+        <nav role="navigation">
+            <a class="selected" href="#" aria-label="Search">
+                <i class="fas fa-search" aria-label="true"></i> Search
             </a>
-        </aside>
-
-        <main>
-            <header>
-                <i class="fas fa-search"></i>
-                <input type="search" 
-                    placeholder="Search for Artists or Songs" 
-                    id="search" 
-                    value="" />
-            </header>
-            <article id="featured-content">
-                <section id="artist-section">
-                    <h1>Top Result</h1>
-                    <section id="artist">
-                        Artist card goes here. When the user wants 
-                        to listen to a track, replace this section 
-                        with an embedded Spotify track player.
-                    </section>
+        </nav>
+    </aside>
+    <main role="main">
+        <header role="banner">
+            <label for="search">
+                <i class="fas fa-search" aria-label="true"></i>
+            </label>
+            <input type="search" placeholder="Search for Artists or Songs" id="search" aria-label="Search for artists or songs" />
+        </header>
+        <article id="featured-content">
+            <section id="artist-section" aria-label="artist-header">
+                <h1 id="artist-header">Now Playing</h1>
+                <section id="artist" aria-label="Current artist">
+                    <img src="path/to/artist-image.jpg" alt="Image of the artist" />
                 </section>
-                <section id="track-section">
-                    <h1>Songs</h1>
-                    <section id="tracks">First 5 tracks go here.</section>
+            </section>
+            <section id="track-section" aria-label="tracks-header">
+                <h1 id="tracks-header">Songs</h1>
+                <section id="tracks" aria-label="Song list">
                 </section>
-                <section id="album-section">
-                    <h1>Albums</h1>
-                    <section id="albums">Albums go here.</section>
+            </section>
+            <section id="album-section" aria-label="albums-header">
+                <h1 id="albums-header">Albums</h1>
+                <section id="albums" aria-label="Album list">
+                    <img src="path/to/album-cover.jpg" alt="Cover of the album" />
                 </section>
-            </article>
-        </main>
-    </body>
+            </section>
+        </article>
+    </main>
+</body>
 </html>
