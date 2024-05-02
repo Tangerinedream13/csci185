@@ -13,49 +13,70 @@ function search (ev) {
 }
 
 async function getTracks (term) {
-    console.log(`
-        get tracks from spotify based on the search term
-        "${term}" and load them into the #tracks section 
-        of the DOM...`);
+    console.log(
+        const url = `https://www.apitutor.org/spotify/simple/v1/search?type=track&q=${term}`;
+        const response = await fetch (url);
+        const trackData = await response.json();
+
+        for (let i = 0; 1 < 5; i++) {
+            const track = trackData [i];
+            const template = `
+                <section class="track-item preview">
+                    <img src="${track.album.image_url}">
+                    <i class="fas play-track fa-play" aria-hidden="true"></i>
+                    <div class="label">
+                        <h2>${track.name}</h2>
+                        <p>${track.artist.name}</p>
+            </div>
+            </section>
+            `;
+            document.querySelector("#tracks").innerHTML += template; 
+    }
 }
 
 async function getAlbums (term) {
-    console.log(`
-        get albums from spotify based on the search term
-        "${term}" and load them into the #albums section 
-        of the DOM...`);
+    console.log(
+        const url = `https://www.apitutor.org/spotify/simple/v1/search?type=album&q=${term}`;
+        const response = await fetch (url);
+        const albumData = await response.json();
+        const album = artistAlbum[0];
+        const template = `
+            <section class="album-card" id="2lATw9ZAVp7ILQcOKPCPqp">
+            <div>
+            <img src="https://i.scdn.co/image/ab67616d0000b2736feb6d9ed7891f40e9a524dd">
+                <h2>Love Yourself 結 'Answer'</h2>
+            <div class="footer">
+                <a href="https://open.spotify.com/album/2lATw9ZAVp7ILQcOKPCPqp" target="_blank">
+                view on spotify
+                </a>
+            </div>
+            </div>
+            </section>
+        
+        `
 }
 
 async function getArtist (term) {
-    const url = `${baseURL}?q=${term}&type=artist&limit=1`;
-    console.log (url);
-    const request = await fetch (url);
-    const data = await request.json();
-    console.log (data);
-    console.log (data[0].name); //name of artist
-    console.log (data[0].image_url); //image_url
-    console.log (data[0].spotify_url); //spotify_url
-
-    // go to the spotify API with the parameter term
-    // type=artist&limit=1
-    // q=term&type=artist&limit=1
-    // insert it into the DOM
-
-    const snippet = `
-        section class="artist-card" id=${data[0].image_url)>
-        <div>
-            <img src="${data[0].image_url}">
-                <h2>${data[0].name}"</h2>
+    const url = `https://www.apitutor.org/spotify/simple/v1/search?type=artist&q=${term}`;
+    const response = await fetch (url);
+    const artistData = await response.json();
+    const artist = artistData[0];
+    const template = `
+        <section class="artist-card" id="${artist.id}">
+                <div>
+                    <img src="${artist.image_url}">
+                    <h2>${artist.name}</h2>
                     <div class="footer">
-                        <a href="${data[0].spotify_url}" target = "_blank">
+                        <a href="${artist.spotify_url}" target="_blank">
                             view on spotify
-                                </a>
-                            </div>
-                        </div>
-                    </section>`;
-    const container = document.querySelector("#artist");
-    container.innerHTML = snippet;
+                        </a>
+                </div>
+            </div>
+        </section>
+    `;
+    document.querySelector("#artist").innerHTML = template; 
 }
+
 
 document.querySelector('#search').onkeyup = function (ev) {
     // Number 13 is the "Enter" key on the keyboard
