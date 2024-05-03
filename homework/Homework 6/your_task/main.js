@@ -31,6 +31,11 @@ async function getTracks (term) {
     const trackData = await response.json();
     console.log(trackData);
     document.querySelector("#tracks").innerHTML = "";
+
+    if (albumData.length === 0) {
+        document.querySelector("#albums").innerHTML = "No albums were returned.";
+        return;
+    }
     
     for (let i = 0; i < 5; i++) {
         const track = trackData [i];
