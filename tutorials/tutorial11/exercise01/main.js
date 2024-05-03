@@ -2,6 +2,7 @@ function makeRed() {
     // your code here...
     console.log('Change the box\'s background color to red');
     document.querySelector("#box").styleBackgroundColor = "red";
+    
 }
 
 function makeBlue() {
