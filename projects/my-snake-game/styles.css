@@ -1,11 +1,6 @@
 body {
     background-color: #38AECC;
 }
-
-p {
-    font-size: 24px;
-}
-
 canvas {
     background-color: #196580;
     cursor: none;
