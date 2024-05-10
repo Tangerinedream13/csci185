@@ -11,8 +11,8 @@ section {
     .grid-container {
       height: 100vh;
       display: grid; 
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr;
       padding: 8px;
       background-color: rgb(246, 249, 248);
   }
@@ -24,7 +24,7 @@ section {
   main {
       .container {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr; 
+          grid-template-columns: 1fr 1fr 1fr 1fr; 
       }
       
       .left-column {

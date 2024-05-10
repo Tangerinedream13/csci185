@@ -22,7 +22,7 @@ function Snake() {
   }
 
   this.death = function() {
-    for (var i = 0; 1 <this.tail.length; i++) {
+    for (var i = 0; i <this.tail.length; i++) {
         var pos = this.tail[i];
         var d = dist(this.x, this.y, pos.x, pos.y); 
         if (d < 1) {
@@ -51,24 +51,16 @@ function Snake() {
     for (var i = 0; i < this.total; i++) {
       rect(this.tail[i].x, this.tail[i].y, scl, scl);        
     }
-    fill(255); 
+    fill(255, 192, 203); 
     rect(this.x, this.y, scl, scl);
   
   }
       this.x = constrain(this.x, 0, width - scl);
       this.y = constrain(this.y, 0, height - scl);
   }
-    rect(this.x, this.y, 10, 10);
+ 
   
-  this.eat = function (pos) {
-    var d = dist(this.x, this.y, pos.x, pos.y);
-    if (d < 1) {
-        this.total++;
-      return true;
-    } else {
-      return false;
-    }
-  }
+
 
 
  

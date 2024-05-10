@@ -31,7 +31,7 @@ function draw() {
     pickLocation();
   }
 
-  fill(255, 0, 100); 
+  fill(0, 255, 0); 
   rect(food.x, food.y, scl, scl); 
 
 }
@@ -48,7 +48,7 @@ function keyPressed() {
     }
   }
   s.death();
-  fill(255, 0, 100);
+  fill(0, 255, 0);
   rect(food.x, food.y, scl, scl);
 
 
